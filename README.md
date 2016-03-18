@@ -1,6 +1,6 @@
 # Cocoapods
 Cocoapods学习日志及文章
-div{background:#000 <p>![Cocoapods](http://upload-images.jianshu.io/upload_images/1623336-1482dba0c4f71e4d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)<p>}
+<p align="center">![Cocoapods](http://upload-images.jianshu.io/upload_images/1623336-1482dba0c4f71e4d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 <p>文章所有者:Whde<p>
 <p>原文链接:http://www.jianshu.com/p/7b33bd1092d5<p>
 <p>这里不啰嗦Cocoapods有什么用,直接上如何使用,关于有什么用,相信各大搜索引擎比我解释更全面;<p>
@@ -10,13 +10,14 @@ div{background:#000 <p>![Cocoapods](http://upload-images.jianshu.io/upload_image
 sudo gem install cocoapods
 ```
 <p>2.输入电脑密码即可开始安装,等待...<p>
-   <p>界面出现<p>
+   <p align="center">界面出现<p>
 <p>![](http://upload-images.jianshu.io/upload_images/1623336-a8fd4a8315bf431b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)<p>
 <p>3.继续终端输入<p>
 ```objective-c
 pod setup
 ```
 <p>等待界面出现<p>
+<p align="center">安装成功<p>
 <p>![安装成功](http://upload-images.jianshu.io/upload_images/1623336-b2c343af14d1fa05.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)<p>
 <p>4.终端输入以下代码,查看版本号<p>
 ```objective-c
@@ -24,15 +25,21 @@ pod setup
 ```
 <p>##写自己的库<p>
 <p>写完代码, 将自己的库上传到github,要生成一个Release版本<p>
-<p>![进入Release仓库](http://upload-images.jianshu.io/upload_images/1623336-ad494032b26c9b31.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)<p>
-<p>![创建新Release版本](http://upload-images.jianshu.io/upload_images/1623336-6fd535b6a5b305a1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)<p>
-<p>![填写信息,发布Release版本](http://upload-images.jianshu.io/upload_images/1623336-65ef7cdc47d7a438.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)<p>
-<p>![版本信息](http://upload-images.jianshu.io/upload_images/1623336-29e6ad8bd5aa8aa3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)<p>
+<p align="center">进入Release仓库<p>
+<p align="center">![进入Release仓库](http://upload-images.jianshu.io/upload_images/1623336-ad494032b26c9b31.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)<p>
+<p align="center">创建新Release版本<p>
+<p align="center">![创建新Release版本](http://upload-images.jianshu.io/upload_images/1623336-6fd535b6a5b305a1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)<p>
+<p align="center">填写信息,发布Release版本<p>
+<p align="center">![填写信息,发布Release版本](http://upload-images.jianshu.io/upload_images/1623336-65ef7cdc47d7a438.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)<p>
+<p align="center">版本信息<p>
+<p align="center">![版本信息](http://upload-images.jianshu.io/upload_images/1623336-29e6ad8bd5aa8aa3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)<p>
 <p>接下来就看怎么将这个Release版本弄到Cocoapods上.<p>
 ##创建.podspec文件
 <p>终端cd到项目文件夹下<p>
-<p>![文件结构](http://upload-images.jianshu.io/upload_images/1623336-a75c551ef8c2eef2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)<p>
-<p>![我的项目就cd到WhdeLocalized文件夹下](http://upload-images.jianshu.io/upload_images/1623336-85c2774a37da9435.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)<p>
+<p align="center">文件结构<p>
+<p align="center">![文件结构](http://upload-images.jianshu.io/upload_images/1623336-a75c551ef8c2eef2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)<p>
+<p align="center">我的项目就cd到WhdeLocalized文件夹下<p>
+<p align="center">![我的项目就cd到WhdeLocalized文件夹下](http://upload-images.jianshu.io/upload_images/1623336-85c2774a37da9435.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)<p>
 <p>终端输入代码创建.podspec文件,代码中Language对应项目名<p>
 ```objective-c
 pod spec create Language
@@ -80,19 +87,19 @@ end
 pod spec lint Language.podspec
 ```
 <p>有什么问题, 会提示出来, 按照它的提示去修改, 不会改, 注意和给出的事例对比, 直到出现以下的结果<p>
-<p>![这个结果表示.podspec文件没有问题](http://upload-images.jianshu.io/upload_images/1623336-a7be54c5829f7fb3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)<p>
+<p align="center">![这个结果表示.podspec文件没有问题](http://upload-images.jianshu.io/upload_images/1623336-a7be54c5829f7fb3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)<p>
 ##上传.podspec文件
 <p>终端输入<p>
 ```objective-c
 pod trunk push Language.podspec
 ```
-<p>![出现这个结果表示已经上传上去了](http://upload-images.jianshu.io/upload_images/1623336-58d44db01f8795f2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)<p>
+<p align="center">![出现这个结果表示已经上传上去了](http://upload-images.jianshu.io/upload_images/1623336-58d44db01f8795f2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)<p>
 ##检查上传结果
 <p>终端输入<p>
 ```objective-c
 pod search Language
 ```
-<p>![上传结果及信息](http://upload-images.jianshu.io/upload_images/1623336-fdf90cf2d71b63d7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)<p>
+<p align="center">![上传结果及信息](http://upload-images.jianshu.io/upload_images/1623336-fdf90cf2d71b63d7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)<p>
 ##使用
 <p>在这里就不详细说Cocoapods使用了, 附上代码<p>
 ```objective-c
