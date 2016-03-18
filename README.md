@@ -1,6 +1,6 @@
 # Cocoapods
 Cocoapods学习日志及文章
-<p>![Cocoapods](http://upload-images.jianshu.io/upload_images/1623336-1482dba0c4f71e4d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)<p>
+div{background:#000 <p>![Cocoapods](http://upload-images.jianshu.io/upload_images/1623336-1482dba0c4f71e4d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)<p>}
 <p>文章所有者:Whde<p>
 <p>原文链接:http://www.jianshu.com/p/7b33bd1092d5<p>
 <p>这里不啰嗦Cocoapods有什么用,直接上如何使用,关于有什么用,相信各大搜索引擎比我解释更全面;<p>
