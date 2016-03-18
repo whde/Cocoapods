@@ -10,14 +10,14 @@ Cocoapods学习日志及文章
 sudo gem install cocoapods
 ```
 <p>2.输入电脑密码即可开始安装,等待...<p>
-   <p align="center" color="#0099FF">界面出现<p>
+   <p align="center">-------界面出现-------<p>
 <p>![](http://upload-images.jianshu.io/upload_images/1623336-a8fd4a8315bf431b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)<p>
 <p>3.继续终端输入<p>
 ```objective-c
 pod setup
 ```
 <p>等待界面出现<p>
-<p align="center">安装成功<p>
+<p align="center">-------安装成功-------<p>
 <p>![安装成功](http://upload-images.jianshu.io/upload_images/1623336-b2c343af14d1fa05.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)<p>
 <p>4.终端输入以下代码,查看版本号<p>
 ```objective-c
@@ -25,20 +25,20 @@ pod setup
 ```
 <p>##写自己的库<p>
 <p>写完代码, 将自己的库上传到github,要生成一个Release版本<p>
-<p align="center">进入Release仓库<p>
+<p align="center">-------进入Release仓库-------<p>
 <p align="center">![进入Release仓库](http://upload-images.jianshu.io/upload_images/1623336-ad494032b26c9b31.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)<p>
-<p align="center">创建新Release版本<p>
+<p align="center">-------创建新Release版本-------<p>
 <p align="center">![创建新Release版本](http://upload-images.jianshu.io/upload_images/1623336-6fd535b6a5b305a1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)<p>
-<p align="center">填写信息,发布Release版本<p>
+<p align="center">-------填写信息,发布Release版本-------<p>
 <p align="center">![填写信息,发布Release版本](http://upload-images.jianshu.io/upload_images/1623336-65ef7cdc47d7a438.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)<p>
-<p align="center">版本信息<p>
+<p align="center">-------版本信息-------<p>
 <p align="center">![版本信息](http://upload-images.jianshu.io/upload_images/1623336-29e6ad8bd5aa8aa3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)<p>
 <p>接下来就看怎么将这个Release版本弄到Cocoapods上.<p>
 ##创建.podspec文件
 <p>终端cd到项目文件夹下<p>
-<p align="center">文件结构<p>
+<p align="center">-------文件结构-------<p>
 <p align="center">![文件结构](http://upload-images.jianshu.io/upload_images/1623336-a75c551ef8c2eef2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)<p>
-<p align="center">我的项目就cd到WhdeLocalized文件夹下<p>
+<p align="center">-------我的项目就cd到WhdeLocalized文件夹下-------<p>
 <p align="center">![我的项目就cd到WhdeLocalized文件夹下](http://upload-images.jianshu.io/upload_images/1623336-85c2774a37da9435.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)<p>
 <p>终端输入代码创建.podspec文件,代码中Language对应项目名<p>
 ```objective-c
