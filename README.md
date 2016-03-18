@@ -10,7 +10,7 @@ Cocoapods学习日志及文章
 sudo gem install cocoapods
 ```
 <p>2.输入电脑密码即可开始安装,等待...<p>
-   <p align="center">界面出现<p>
+   <p align="center" color="#0099FF">界面出现<p>
 <p>![](http://upload-images.jianshu.io/upload_images/1623336-a8fd4a8315bf431b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)<p>
 <p>3.继续终端输入<p>
 ```objective-c
