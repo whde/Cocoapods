@@ -23,7 +23,7 @@ pod setup
 ```objective-c
 --version
 ```
-<p>##写自己的库<p>
+##写自己的库
 <p>写完代码, 将自己的库上传到github,要生成一个Release版本<p>
 <p align="center">-------进入Release仓库-------<p>
 <p align="center">![进入Release仓库](http://upload-images.jianshu.io/upload_images/1623336-ad494032b26c9b31.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)<p>
