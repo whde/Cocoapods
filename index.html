@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Cocoapods by whde</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Cocoapods</h1>
+      <h2 class="project-tagline">Cocoapods学习日志及文章</h2>
+      <a href="https://github.com/whde/Cocoapods" class="btn">View on GitHub</a>
+      <a href="https://github.com/whde/Cocoapods/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/whde/Cocoapods/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="cocoapods" class="anchor" href="#cocoapods" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Cocoapods</h1>
+
+<p>Cocoapods学习日志及文章
+</p><p align="center"><img src="http://upload-images.jianshu.io/upload_images/1623336-1482dba0c4f71e4d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Cocoapods">
+</p><p>文章所有者:Whde</p><p>
+</p><p>原文链接:<a href="http://www.jianshu.com/p/7b33bd1092d5">http://www.jianshu.com/p/7b33bd1092d5</a></p><p>
+</p><p>这里不啰嗦Cocoapods有什么用,直接上如何使用,关于有什么用,相信各大搜索引擎比我解释更全面;</p><p></p>
+
+<h2>
+<a id="cocoapods安装" class="anchor" href="#cocoapods%E5%AE%89%E8%A3%85" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Cocoapods安装</h2>
+
+<p></p><p>1.Mac终端输入</p><p></p>
+
+<div class="highlight highlight-source-objc"><pre>sudo gem install cocoapods</pre></div>
+
+<p></p><p>2.输入电脑密码即可开始安装,等待...</p><p>
+   </p><p align="center">-------界面出现-------</p><p>
+</p><p><img src="http://upload-images.jianshu.io/upload_images/1623336-a8fd4a8315bf431b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p><p>
+</p><p>3.继续终端输入</p><p></p>
+
+<div class="highlight highlight-source-objc"><pre>pod setup</pre></div>
+
+<p></p><p>等待界面出现</p><p>
+</p><p align="center">-------安装成功-------</p><p>
+</p><p><img src="http://upload-images.jianshu.io/upload_images/1623336-b2c343af14d1fa05.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="安装成功"></p><p>
+</p><p>4.终端输入以下代码,查看版本号</p><p></p>
+
+<div class="highlight highlight-source-objc"><pre>--version</pre></div>
+
+<h2>
+<a id="写自己的库" class="anchor" href="#%E5%86%99%E8%87%AA%E5%B7%B1%E7%9A%84%E5%BA%93" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>写自己的库</h2>
+
+<p></p><p>写完代码, 将自己的库上传到github,要生成一个Release版本</p><p>
+</p><p align="center">-------进入Release仓库-------</p><p>
+</p><p align="center"><img src="http://upload-images.jianshu.io/upload_images/1623336-ad494032b26c9b31.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="进入Release仓库"></p><p>
+</p><p align="center">-------创建新Release版本-------</p><p>
+</p><p align="center"><img src="http://upload-images.jianshu.io/upload_images/1623336-6fd535b6a5b305a1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="创建新Release版本"></p><p>
+</p><p align="center">-------填写信息,发布Release版本-------</p><p>
+</p><p align="center"><img src="http://upload-images.jianshu.io/upload_images/1623336-65ef7cdc47d7a438.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="填写信息,发布Release版本"></p><p>
+</p><p align="center">-------版本信息-------</p><p>
+</p><p align="center"><img src="http://upload-images.jianshu.io/upload_images/1623336-29e6ad8bd5aa8aa3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="版本信息"></p><p>
+</p><p>接下来就看怎么将这个Release版本弄到Cocoapods上.</p><p></p>
+
+<h2>
+<a id="创建podspec文件" class="anchor" href="#%E5%88%9B%E5%BB%BApodspec%E6%96%87%E4%BB%B6" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>创建.podspec文件</h2>
+
+<p></p><p>终端cd到项目文件夹下</p><p>
+</p><p align="center">-------文件结构-------</p><p>
+</p><p align="center"><img src="http://upload-images.jianshu.io/upload_images/1623336-a75c551ef8c2eef2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="文件结构"></p><p>
+</p><p align="center">-------我的项目就cd到WhdeLocalized文件夹下-------</p><p>
+</p><p align="center"><img src="http://upload-images.jianshu.io/upload_images/1623336-85c2774a37da9435.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="我的项目就cd到WhdeLocalized文件夹下"></p><p>
+</p><p>终端输入代码创建.podspec文件,代码中Language对应项目名</p><p></p>
+
+<div class="highlight highlight-source-objc"><pre>pod spec create Language</pre></div>
+
+<p></p><p>用Xcode打开这个Language.podspec文件, 填写以下代码:</p><p></p>
+
+<div class="highlight highlight-source-objc"><pre>Pod::Spec.new <span class="pl-k">do</span> |s|
+s.name          = <span class="pl-s"><span class="pl-pds">"</span>Language<span class="pl-pds">"</span></span>
+s.version       = <span class="pl-s"><span class="pl-pds">"</span>1.0.4<span class="pl-pds">"</span></span>
+s.summary       = <span class="pl-s"><span class="pl-pds">"</span>iOS Language.<span class="pl-pds">"</span></span>
+s.homepage      = <span class="pl-s"><span class="pl-pds">"</span>https://github.com/whde/WhdeLocalized<span class="pl-pds">"</span></span>
+s.license       = <span class="pl-s"><span class="pl-pds">'</span>MIT<span class="pl-pds">'</span></span>
+s.author        = { <span class="pl-s"><span class="pl-pds">"</span>Whde<span class="pl-pds">"</span></span> =&gt; <span class="pl-s"><span class="pl-pds">"</span>460290973@qq.com<span class="pl-pds">"</span></span> }
+s.platform      = :ios, <span class="pl-s"><span class="pl-pds">"</span>7.0<span class="pl-pds">"</span></span>
+s.source        = { :git =&gt; <span class="pl-s"><span class="pl-pds">"</span>https://github.com/whde/WhdeLocalized.git<span class="pl-pds">"</span></span>, :tag =&gt; s.<span class="pl-smi">version</span>.<span class="pl-smi">to_s</span> }
+s.source_files  = <span class="pl-s"><span class="pl-pds">'</span>Language/Language/Language/*<span class="pl-pds">'</span></span>
+s.frameworks    = <span class="pl-s"><span class="pl-pds">'</span>Foundation<span class="pl-pds">'</span></span>
+s.requires_arc  = <span class="pl-c1">true</span>
+s.description   = &lt;&lt;-DESC
+It is a Language used on iOS, which implement by Objective-C.
+DESC
+end</pre></div>
+
+<p></p><p>key对应的信息</p><p></p>
+
+<div class="highlight highlight-source-objc"><pre>s.name(项目名称)
+s.version(Release版本号,必须和Github上的Release版本号对于)
+s.summary(对项目总结性的语言)
+s.homepage(Github上项目的地址)
+s.license(默认<span class="pl-s"><span class="pl-pds">'</span>MIT<span class="pl-pds">'</span></span>)
+s.author(用户信息;自己的名字,自己的邮箱)
+s.platform(支持的版本)
+s.source(项目的git地址)
+s.source_files(告诉别人,使用你的库,需要添加的文件在哪里)
+s.frameworks(这项目需要添加的库)
+s.requires_arc(是否支持ARC)
+s.description   = &lt;&lt;-DESC
+(更详细的描述)
+DESC
+end</pre></div>
+
+<h2>
+<a id="检查podspec文件是否有问题" class="anchor" href="#%E6%A3%80%E6%9F%A5podspec%E6%96%87%E4%BB%B6%E6%98%AF%E5%90%A6%E6%9C%89%E9%97%AE%E9%A2%98" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>检查.podspec文件是否有问题</h2>
+
+<p></p><p>终端输入</p><p></p>
+
+<div class="highlight highlight-source-objc"><pre>pod spec lint Language.podspec</pre></div>
+
+<p></p><p>有什么问题, 会提示出来, 按照它的提示去修改, 不会改, 注意和给出的事例对比, 直到出现以下的结果</p><p>
+</p><p align="center"><img src="http://upload-images.jianshu.io/upload_images/1623336-a7be54c5829f7fb3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这个结果表示.podspec文件没有问题"></p><p></p>
+
+<h2>
+<a id="上传podspec文件" class="anchor" href="#%E4%B8%8A%E4%BC%A0podspec%E6%96%87%E4%BB%B6" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>上传.podspec文件</h2>
+
+<p></p><p>终端输入</p><p></p>
+
+<div class="highlight highlight-source-objc"><pre>pod trunk push Language.podspec</pre></div>
+
+<p></p><p align="center"><img src="http://upload-images.jianshu.io/upload_images/1623336-58d44db01f8795f2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="出现这个结果表示已经上传上去了"></p><p></p>
+
+<h2>
+<a id="检查上传结果" class="anchor" href="#%E6%A3%80%E6%9F%A5%E4%B8%8A%E4%BC%A0%E7%BB%93%E6%9E%9C" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>检查上传结果</h2>
+
+<p></p><p>终端输入</p><p></p>
+
+<div class="highlight highlight-source-objc"><pre>pod search Language</pre></div>
+
+<p></p><p align="center"><img src="http://upload-images.jianshu.io/upload_images/1623336-fdf90cf2d71b63d7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="上传结果及信息"></p><p></p>
+
+<h2>
+<a id="使用" class="anchor" href="#%E4%BD%BF%E7%94%A8" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>使用</h2>
+
+<p></p><p>在这里就不详细说Cocoapods使用了, 附上代码</p><p></p>
+
+<div class="highlight highlight-source-objc"><pre>pod <span class="pl-s"><span class="pl-pds">'</span>Language<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>~&gt; 1.0.4<span class="pl-pds">'</span></span></pre></div>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/whde/Cocoapods">Cocoapods</a> is maintained by <a href="https://github.com/whde">whde</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
