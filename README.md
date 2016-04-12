@@ -9,28 +9,28 @@ Cocoapods学习日志及文章
 sudo gem install cocoapods
 ```
  <p>**2.输入电脑密码即可开始安装,等待...** </p>
-<p>![界面出现](http://img.blog.csdn.net/20160321102212833)</p>
+<p><img src="http://img.blog.csdn.net/20160321102212833" alt="界面出现" width=100% height=100% ></p>
 <p> **3.继续终端输入** </p>
 ```objective-c
 pod setup
 ```
 <p> 等待界面出现 </p>
-<p>![安装成功](http://img.blog.csdn.net/20160321102350252)</p>
+<p><img src="http://img.blog.csdn.net/20160321102350252" alt="安装成功" width=100% height=100% ></p>
 <p> **4.终端输入以下代码,查看版本号** </p>
 ```objective-c
 --version
 ```
 #写自己的库 
  <p>写完代码, 将自己的库上传到github,要生成一个Release版本 </p>
-<p>![进入Release仓库](http://img.blog.csdn.net/20160321102431627)</p>
-<p>![创建新Release版本(http://img.blog.csdn.net/20160321102506430)</p>
-<p>![填写信息,发布Release版本](http://img.blog.csdn.net/20160321102633268)</p>
-<p>![版本信息](http://img.blog.csdn.net/20160321102721659)</p>
+ <p><img src="http://img.blog.csdn.net/20160321102431627" alt="进入Release仓库" width=100% height=100% ></p>
+<p><img src="http://img.blog.csdn.net/20160321102506430" alt="创建新Release版本" width=100% height=100% ></p>
+<p><img src="http://img.blog.csdn.net/20160321102633268" alt="填写信息,发布Release版本" width=100% height=100% ></p>
+<p><img src="http://img.blog.csdn.net/20160321102721659" alt="版本信息" width=100% height=100% ></p>
 <p> 接下来就看怎么将这个Release版本弄到Cocoapods上. </p>
 #创建.podspec文件
 <p> 终端cd到项目文件夹下 </p>
-<p>![文件结构](http://img.blog.csdn.net/20160321102747628)</p>
-<p>![我的项目就cd到WhdeLocalized文件夹下](http://img.blog.csdn.net/20160321102819137)</p>
+<p><img src="http://img.blog.csdn.net/20160321102747628" alt="文件结构" width=100% height=100% ></p>
+<p><img src="http://img.blog.csdn.net/20160321102819137" alt="我的项目就cd到WhdeLocalized文件夹下" width=100% height=100% ></p>
  <p>终端输入代码创建.podspec文件,代码中Language对应项目名 </p>
 ```objective-c
 pod spec create Language
@@ -78,20 +78,19 @@ end
 pod spec lint Language.podspec
 ```
  <p>有什么问题, 会提示出来, 按照它的提示去修改, 不会改, 注意和给出的事例对比, 直到出现以下的结果 </p>
-<p>![](http://img.blog.csdn.net/20160321102858269)</p>
+ <p><img src="http://img.blog.csdn.net/20160321102858269" alt="结果" width=100% height=100% ></p>
 #上传.podspec文件
  <p>终端输入 </p>
 ```objective-c
 pod trunk push Language.podspec
 ```
-
-<p>![出现这个结果表示已经上传上去了](http://img.blog.csdn.net/20160321103804820)</p>
+ <p><img src="http://img.blog.csdn.net/20160321103804820" alt="出现这个结果表示已经上传上去了" width=100% height=100% ></p>
 #检查上传结果
  <p>终端输入 </p>
 ```objective-c
 pod search Language
 ```
-<p>![](http://img.blog.csdn.net/20160321103001442)</p>
+ <p><img src="http://img.blog.csdn.net/20160321103001442" alt="" width=100% height=100% ></p>
 #使用
  <p>在这里就不详细说Cocoapods使用了, 附上代码 </p>
 ```objective-c
