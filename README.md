@@ -1,41 +1,41 @@
 # Cocoapods
 Cocoapods学习日志及文章
-<img src="http://img.blog.csdn.net/20160321102112344" alt="Cocoapods" width=100 height=100% >
-**文章所有者:Whde**
-这里不啰嗦Cocoapods有什么用,直接上如何使用,关于有什么用,相信各大搜索引擎比我解释更全面;
+<p><img src="http://img.blog.csdn.net/20160321102112344" alt="Cocoapods" width=100 height=100% ></p>
+<p>**文章所有者:Whde**</p>
+<p>这里不啰嗦Cocoapods有什么用,直接上如何使用,关于有什么用,相信各大搜索引擎比我解释更全面;</p>
 #Cocoapods安装
- **1.Mac终端输入** 
+ <p>**1.Mac终端输入** </p>
 ```objective-c
 sudo gem install cocoapods
 ```
- **2.输入电脑密码即可开始安装,等待...** 
-![界面出现](http://img.blog.csdn.net/20160321102212833)
- **3.继续终端输入** 
+ <p>**2.输入电脑密码即可开始安装,等待...** </p>
+<p>![界面出现](http://img.blog.csdn.net/20160321102212833)</p>
+<p> **3.继续终端输入** </p>
 ```objective-c
 pod setup
 ```
- 等待界面出现 
-![安装成功](http://img.blog.csdn.net/20160321102350252)
- **4.终端输入以下代码,查看版本号** 
+<p> 等待界面出现 </p>
+<p>![安装成功](http://img.blog.csdn.net/20160321102350252)</p>
+<p> **4.终端输入以下代码,查看版本号** </p>
 ```objective-c
 --version
 ```
 #写自己的库 
- 写完代码, 将自己的库上传到github,要生成一个Release版本 
-![进入Release仓库](http://img.blog.csdn.net/20160321102431627)
-![创建新Release版本(http://img.blog.csdn.net/20160321102506430)
-![填写信息,发布Release版本](http://img.blog.csdn.net/20160321102633268)
-![版本信息](http://img.blog.csdn.net/20160321102721659)
- 接下来就看怎么将这个Release版本弄到Cocoapods上. 
+ <p>写完代码, 将自己的库上传到github,要生成一个Release版本 </p>
+<p>![进入Release仓库](http://img.blog.csdn.net/20160321102431627)</p>
+<p>![创建新Release版本(http://img.blog.csdn.net/20160321102506430)</p>
+<p>![填写信息,发布Release版本](http://img.blog.csdn.net/20160321102633268)</p>
+<p>![版本信息](http://img.blog.csdn.net/20160321102721659)</p>
+<p> 接下来就看怎么将这个Release版本弄到Cocoapods上. </p>
 #创建.podspec文件
- 终端cd到项目文件夹下 
-![文件结构](http://img.blog.csdn.net/20160321102747628)
-![我的项目就cd到WhdeLocalized文件夹下](http://img.blog.csdn.net/20160321102819137)
- 终端输入代码创建.podspec文件,代码中Language对应项目名 
+<p> 终端cd到项目文件夹下 </p>
+<p>![文件结构](http://img.blog.csdn.net/20160321102747628)</p>
+<p>![我的项目就cd到WhdeLocalized文件夹下](http://img.blog.csdn.net/20160321102819137)</p>
+ <p>终端输入代码创建.podspec文件,代码中Language对应项目名 </p>
 ```objective-c
 pod spec create Language
 ```
- 用Xcode打开这个Language.podspec文件, 填写以下代码: 
+<p> 用Xcode打开这个Language.podspec文件, 填写以下代码: </p>
 ```objective-c
 Pod::Spec.new do |s|
 s.name          = "Language"
@@ -54,7 +54,7 @@ It is a Language used on iOS, which implement by Objective-C.
 DESC
 end
 ```
- key对应的信息 
+ <p>key对应的信息 </p>
 ```objective-c
 s.name(项目名称)
 s.version(Release版本号,必须和Github上的Release版本号对于)
@@ -73,27 +73,27 @@ DESC
 end
 ```
 #检查.podspec文件是否有问题
- 终端输入 
+ <p>终端输入 </p>
 ```objective-c
 pod spec lint Language.podspec
 ```
- 有什么问题, 会提示出来, 按照它的提示去修改, 不会改, 注意和给出的事例对比, 直到出现以下的结果 
-![](http://img.blog.csdn.net/20160321102858269)
+ <p>有什么问题, 会提示出来, 按照它的提示去修改, 不会改, 注意和给出的事例对比, 直到出现以下的结果 </p>
+<p>![](http://img.blog.csdn.net/20160321102858269)</p>
 #上传.podspec文件
- 终端输入 
+ <p>终端输入 </p>
 ```objective-c
 pod trunk push Language.podspec
 ```
 
-![出现这个结果表示已经上传上去了](http://img.blog.csdn.net/20160321103804820)
+<p>![出现这个结果表示已经上传上去了](http://img.blog.csdn.net/20160321103804820)</p>
 #检查上传结果
- 终端输入 
+ <p>终端输入 </p>
 ```objective-c
 pod search Language
 ```
-![](http://img.blog.csdn.net/20160321103001442)
+<p>![](http://img.blog.csdn.net/20160321103001442)</p>
 #使用
- 在这里就不详细说Cocoapods使用了, 附上代码 
+ <p>在这里就不详细说Cocoapods使用了, 附上代码 </p>
 ```objective-c
 pod 'Language', '~> 1.0.4'
 ```
