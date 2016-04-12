@@ -1,6 +1,6 @@
 # Cocoapods
 Cocoapods学习日志及文章
-<div><image src="http://img.blog.csdn.net/20160321102112344" width=100 height=100% title="Cocoapods" alit='center'/></div>
+<p><image src="http://img.blog.csdn.net/20160321102112344" width=100 height=100% title="Cocoapods"/><p>
 **文章所有者:Whde**
 这里不啰嗦Cocoapods有什么用,直接上如何使用,关于有什么用,相信各大搜索引擎比我解释更全面;
 #Cocoapods安装
