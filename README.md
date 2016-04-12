@@ -1,5 +1,6 @@
 # Cocoapods
 Cocoapods学习日志及文章
+![](http://upload-images.jianshu.io/upload_images/3-ec6299784805c007.jpg){ImgCap}马拉之死{/ImgCap}
 <p align="center"><img src="http://img.blog.csdn.net/20160321102112344" alt="Cocoapods" width=200 height=200% border=3></p>
 <p>**文章所有者:Whde**</p>
 <p>这里不啰嗦Cocoapods有什么用,直接上如何使用,关于有什么用,相信各大搜索引擎比我解释更全面;</p>
