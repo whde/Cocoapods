@@ -19,7 +19,7 @@ pod setup
 ```
 <p> 等待界面出现 </p>
 <p align="center"><img src="http://img.blog.csdn.net/20160321102350252" alt="安装成功" width=100% height=100% ></p>
-<p align="安装成功">Cocoapods</p>
+<p align="center">安装成功🔼</p>
 <p> **4.终端输入以下代码,查看版本号** </p>
 ```objective-c
 --version
@@ -27,25 +27,25 @@ pod setup
 #写自己的库 
  <p>写完代码, 将自己的库上传到github,要生成一个Release版本 </p>
  <p align="center"><img src="http://img.blog.csdn.net/20160321102431627" alt="进入Release仓库" width=100% height=100% border=3></p>
- <p align="进入Release仓库🔼">Cocoapods</p>
+<p align="center">进入Release仓库🔼</p>
 
 <p align="center"><img src="http://img.blog.csdn.net/20160321102506430" alt="创建新Release版本" width=100% height=100% ></p>
- <p align="创建新Release版本🔼">Cocoapods</p>
+<p align="center">创建新Release版本🔼</p>
 
 <p align="center"><img src="http://img.blog.csdn.net/20160321102633268" alt="填写信息,发布Release版本" width=100% height=100% ></p>
- <p align="填写信息,发布Release版本🔼">Cocoapods</p>
+<p align="center">填写信息,发布Release版本🔼</p>
 
 <p align="center"><img src="http://img.blog.csdn.net/20160321102721659" alt="版本信息" width=100% height=100% ></p>
- <p align="版本信息🔼">Cocoapods</p>
+<p align="center">版本信息🔼</p>
 
 <p> 接下来就看怎么将这个Release版本弄到Cocoapods上. </p>
 #创建.podspec文件
 <p> 终端cd到项目文件夹下 </p>
 <p align="center"><img src="http://img.blog.csdn.net/20160321102747628" alt="文件结构" width=100% height=100% ></p>
- <p align="文件结构🔼">Cocoapods</p>
+<p align="center">文件结构🔼</p>
 
 <p align="center"><img src="http://img.blog.csdn.net/20160321102819137" alt="我的项目就cd到WhdeLocalized文件夹下" width=100% height=100% ></p>
- <p align="我的项目就cd到WhdeLocalized文件夹下🔼">Cocoapods</p>
+<p align="center">我的项目就cd到WhdeLocalized文件夹下🔼</p>
 
  <p>终端输入代码创建.podspec文件,代码中Language对应项目名 </p>
 ```objective-c
@@ -95,12 +95,16 @@ pod spec lint Language.podspec
 ```
  <p>有什么问题, 会提示出来, 按照它的提示去修改, 不会改, 注意和给出的事例对比, 直到出现以下的结果 </p>
  <p align="center"><img src="http://img.blog.csdn.net/20160321102858269" alt="结果" width=100% height=100% ></p>
+  <p align="center">结果🔼</p>
+
 #上传.podspec文件
  <p>终端输入 </p>
 ```objective-c
 pod trunk push Language.podspec
 ```
  <p align="center"><img src="http://img.blog.csdn.net/20160321103804820" alt="出现这个结果表示已经上传上去了" width=100% height=100% ></p>
+ <p align="center">出现这个结果表示已经上传上去了🔼</p>
+
 #检查上传结果
  <p>终端输入 </p>
 ```objective-c
