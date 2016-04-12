@@ -1,6 +1,6 @@
 # Cocoapods
 Cocoapods学习日志及文章
-<p align="center"><img src="http://img.blog.csdn.net/20160321102112344" alt="Cocoapods" width=200 height=200% "></p>
+<p align="center"><img src="http://img.blog.csdn.net/20160321102112344" alt="Cocoapods" width=200 height=200% border=3></p>
 <p>**文章所有者:Whde**</p>
 <p>这里不啰嗦Cocoapods有什么用,直接上如何使用,关于有什么用,相信各大搜索引擎比我解释更全面;</p>
 #Cocoapods安装
@@ -9,7 +9,7 @@ Cocoapods学习日志及文章
 sudo gem install cocoapods
 ```
  <p>**2.输入电脑密码即可开始安装,等待...** </p>
-<p align="center"><img src="http://img.blog.csdn.net/20160321102212833" alt="界面出现" width=100% height=100% ></p>
+<p align="center"><img src="http://img.blog.csdn.net/20160321102212833" alt="界面出现" width=100% height=100% border=3></p>
 <p> **3.继续终端输入** </p>
 ```objective-c
 pod setup
@@ -22,7 +22,7 @@ pod setup
 ```
 #写自己的库 
  <p>写完代码, 将自己的库上传到github,要生成一个Release版本 </p>
- <p align="center"><img src="http://img.blog.csdn.net/20160321102431627" alt="进入Release仓库" width=100% height=100% ></p>
+ <p align="center"><img src="http://img.blog.csdn.net/20160321102431627" alt="进入Release仓库" width=100% height=100% border=3></p>
 <p align="center"><img src="http://img.blog.csdn.net/20160321102506430" alt="创建新Release版本" width=100% height=100% ></p>
 <p align="center"><img src="http://img.blog.csdn.net/20160321102633268" alt="填写信息,发布Release版本" width=100% height=100% ></p>
 <p align="center"><img src="http://img.blog.csdn.net/20160321102721659" alt="版本信息" width=100% height=100% ></p>
