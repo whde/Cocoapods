@@ -11,7 +11,7 @@ sudo gem install cocoapods
 ```
  <p>**2.输入电脑密码即可开始安装,等待...** </p>
 <p align="center"><img src="http://img.blog.csdn.net/20160321102212833" alt="界面出现" width=100% height=100% border=3></p>
-<p align="界面出现">Cocoapods</p>
+<p align="center">⬆️界面出现⬆️</p>
 
 <p> **3.继续终端输入** </p>
 ```objective-c
