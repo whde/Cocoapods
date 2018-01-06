@@ -6,6 +6,7 @@ Cocoapods学习日志及文章
 <p>这里不啰嗦Cocoapods有什么用,直接上如何使用,关于有什么用,相信各大搜索引擎比我解释更全面;</p>
 #Cocoapods安装
  <p>**1.Mac终端输入** </p>
+
 ```objective-c
 sudo gem install cocoapods
 ```
@@ -14,6 +15,7 @@ sudo gem install cocoapods
 <p align="center">⬆️界面出现⬆️</p>
 
 <p> **3.继续终端输入** </p>
+
 ```objective-c
 pod setup
 ```
@@ -21,6 +23,7 @@ pod setup
 <p align="center"><img src="http://img.blog.csdn.net/20160321102350252" alt="安装成功" width=100% height=100% ></p>
 <p align="center">⬆️安装成功⬆️</p>
 <p> **4.终端输入以下代码,查看版本号** </p>
+
 ```objective-c
 --version
 ```
