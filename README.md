@@ -93,9 +93,9 @@ end
 ```objective-c
 pod spec lint Language.podspec
 ```
- <p>有什么问题, 会提示出来, 按照它的提示去修改, 不会改, 注意和给出的事例对比, 直到出现以下的结果 </p>
- <p align="center"><img src="http://img.blog.csdn.net/20160321102858269" alt="结果" width=100% height=100% ></p>
-  <p align="center">⬆️结果⬆️</p>
+<p>有什么问题, 会提示出来, 按照它的提示去修改, 不会改, 注意和给出的事例对比, 直到出现以下的结果 </p>
+<p align="center"><img src="http://img.blog.csdn.net/20160321102858269" alt="结果" width=100% height=100% ></p>
+<p align="center">⬆️结果⬆️</p>
 
 #上传.podspec文件
  <p>终端输入 </p>
