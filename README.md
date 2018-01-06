@@ -51,10 +51,13 @@ pod setup
 <p align="center">⬆️我的项目就cd到WhdeLocalized文件夹下⬆️</p>
 
  <p>终端输入代码创建.podspec文件,代码中Language对应项目名 </p>
+ 
 ```objective-c
 pod spec create Language
 ```
+
 <p> 用Xcode打开这个Language.podspec文件, 填写以下代码: </p>
+
 ```objective-c
 Pod::Spec.new do |s|
 s.name          = "Language"
@@ -73,7 +76,9 @@ It is a Language used on iOS, which implement by Objective-C.
 DESC
 end
 ```
+
  <p>key对应的信息 </p>
+ 
 ```objective-c
 s.name(项目名称)
 s.version(Release版本号,必须和Github上的Release版本号对于)
@@ -91,31 +96,40 @@ s.description   = <<-DESC
 DESC
 end
 ```
+
 #检查.podspec文件是否有问题
  <p>终端输入 </p>
+ 
 ```objective-c
 pod spec lint Language.podspec
 ```
+
 <p>有什么问题, 会提示出来, 按照它的提示去修改, 不会改, 注意和给出的事例对比, 直到出现以下的结果 </p>
 <p align="center"><img src="http://img.blog.csdn.net/20160321102858269" alt="结果" width=100% height=100% ></p>
 <p align="center">⬆️结果⬆️</p>
 
 #上传.podspec文件
  <p>终端输入 </p>
+ 
 ```objective-c
 pod trunk push Language.podspec
 ```
+
  <p align="center"><img src="http://img.blog.csdn.net/20160321103804820" alt="出现这个结果表示已经上传上去了" width=100% height=100% ></p>
  <p align="center">⬆️出现这个结果表示已经上传上去了⬆️</p>
 
 #检查上传结果
  <p>终端输入 </p>
+ 
 ```objective-c
 pod search Language
 ```
+ 
  <p align="center"><img src="http://img.blog.csdn.net/20160321103001442" alt="" width=100% height=100% ></p>
 #使用
  <p>在这里就不详细说Cocoapods使用了, 附上代码 </p>
+
 ```objective-c
 pod 'Language', '~> 1.0.4'
 ```
+
